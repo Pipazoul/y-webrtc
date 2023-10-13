@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  webrtc-signaling:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: yassinsiouda/webrtc-signaling
+    container_name: webrtc-signaling
+    ports:
+      - "8080:8080"
